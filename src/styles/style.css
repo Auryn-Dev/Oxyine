@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Quicksand:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+:root {
+    --text-color: #8BBEB2;
+    --accent-color: #384E77;
+    --main-color: #384E77;
+    --bg: #0D0630;
+}
+
+body {
+  font-family: 'Fira Code';
+  background-color: var(--bg);
+  color: var(--text-color)
+  
+}
+.wrapper h1 {
+    text-shadow:
+        0 0 10px #00f0ff,
+        0 0 20px #00f0ff,
+        0 0 40px #00bcd4;
+
+    color: #ffffff;
+    text-align: center;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+
+
+#topnav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    margin: 1rem auto 0 auto;
+    background-color: rgba(56, 78, 119, 0.2); /* subtle accent tint */
+    border: 1px solid var(--accent-color);
+    border-radius: 2rem; 
+    width: fit-content; 
+    box-shadow: 0 0 20px var(--accent-color);
+}
+
+#topnav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 0.3rem 1rem;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+
+}
+
+#topnav a:hover {
+    color: #ffffff;
+    background-color: var(--accent-color);
+    text-shadow: 0 0 8px var(--accent-color);
+}
+
+
+
+
+
+.contact {
+    max-width: 600px;
+    margin: 3rem auto 3rem auto; /* centered and spaced */
+    padding: 2rem;
+    background-color: rgba(13, 6, 48, 0.85); /* dark semi-transparent bg */
+    border-radius: 1rem;
+    box-shadow: 0 0 20px var(--accent-color);
+    font-family: 'Fira Code', monospace;
+    color: var(--text-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+label {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+input[type="text"],
+select,
+textarea {
+    padding: 0.75rem 1rem;
+    border-radius: 0.6rem;
+    border: 1.5px solid var(--accent-color);
+    background-color: var(--bg);
+    color: var(--text-color);
+    font-size: 1rem;
+    resize: vertical;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Fira Code', monospace;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #00f0ff;
+    box-shadow: 0 0 8px #00f0ff;
+    background-color: #111a40;
+}
+
+input[type="submit"] {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--accent-color);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    align-self: flex-start;
+    box-shadow:
+      0 0 10px var(--accent-color),
+      0 0 20px var(--accent-color);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Fira Code', monospace;
+}
+
+input[type="submit"]:hover {
+    background-color: #00f0ff;
+    box-shadow:
+      0 0 15px #00f0ff,
+      0 0 30px #00f0ff;
+    color: var(--bg);
+}
+
+div h1{
+  text-align: center;
+}
+
+.tools .toolBox {
+  background-color: var(--accent-color);
+  width: max(20%, 250px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns children to the left */
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.tools .toolBox h1 {
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem 0; /* Bottom spacing */
+}
+
+.tools .toolBox p {
+  margin: 0;
+}
+
+.tools .toolBox img {
+  width: 100%;
+  max-width: 250px; 
+  height: auto;
+  align-self: center;
+  margin-bottom: 1rem; /* Optional spacing below the image */
+}
