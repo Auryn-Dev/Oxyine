@@ -141,7 +141,7 @@ div h1{
 
 .tools .toolBox {
   background-color: var(--accent-color);
-  width: max(20%, 250px);
+  width: max(15%, 250px);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -166,4 +166,5 @@ div h1{
   height: auto;
   align-self: center;
   margin-bottom: 1rem; /* Optional spacing below the image */
+  border-radius: 20px;
 }
