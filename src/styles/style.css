@@ -2,10 +2,10 @@
 
 
 :root {
-    --text-color: #8BBEB2;
-    --accent-color: #384E77;
-    --main-color: #384E77;
-    --bg: #0D0630;
+  --text-color: #f2e9e4;
+  --accent-color: #4A4E69;
+  --main-color: #9A8C98;
+  --bg: #22223B;
 }
 
 body {
@@ -14,6 +14,8 @@ body {
   color: var(--text-color)
   
 }
+
+
 .wrapper h1 {
     text-shadow:
         0 0 10px #00f0ff,
@@ -175,4 +177,14 @@ div h1{
   max-width: 250px; 
   height: auto;
   border-radius: 40px;
+}
+
+
+.subtext {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 800;
+  font-size: 25px;
 }
